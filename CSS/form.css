@@ -1,0 +1,34 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__input {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.form__input:active {
+  border: black;
+}
+
+.form__button {
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+  background-color: teal;
+  border: none;
+}
+
+.form__button:active {
+  outline: 1px solid teal;
+  color: teal;
+  background-color: white;
+}
