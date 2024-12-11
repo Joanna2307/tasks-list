@@ -53,7 +53,7 @@
 
     document.querySelector(".js-taskList").innerHTML = htmlString;
 
-    bindEvents(); // Ponowne przypisanie eventów
+    bindEvents();
   };
 
   const onFormSubmit = (event) => {
@@ -66,7 +66,7 @@
     }
 
     addNewTask(newTaskContent);
-    document.querySelector(".js-newTask").value = ""; // Wyczyść pole tekstowe
+    document.querySelector(".js-newTask").value = "";
   };
 
   const init = () => {
