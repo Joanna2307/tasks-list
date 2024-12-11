@@ -1,11 +1,11 @@
 .section {
-  margin: 15px 0px;
+  margin: 15px 0;
   background-color: white;
 }
 
 .section__header {
   padding: 20px;
-  margin: 0px;
+  margin: 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -14,7 +14,41 @@
 }
 
 .section__list {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.section__listItem--done {
+  text-decoration: line-through;
+}
+
+.section__listItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section__button {
+  background-color: green;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.section__button:active {
+  background-color: limegreen;
+}
+
+.section__buttonRemove {
+  background-color: red;
+  margin-left: 150 px;
+}
+
+.section__buttonRemove:active {
+  background-color: rgb(202, 128, 128);
 }
