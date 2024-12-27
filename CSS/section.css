@@ -4,12 +4,25 @@
 }
 
 .section__header {
-  padding: 20px;
+  font-size: 20px;
   margin: 0;
+}
+
+.section__header--first {
+  padding: 20px;
+  font-size: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-.section__container {
+.section__header--second {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.section__div {
   padding: 25px;
 }
 
@@ -19,10 +32,6 @@
   list-style: none;
 }
 
-.section__listItem--done {
-  text-decoration: line-through;
-}
-
 .section__listItem {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -30,6 +39,14 @@
   gap: 15px;
   padding: 15px;
   border-bottom: 1px solid #ddd;
+}
+
+.section__listItem--done {
+  text-decoration: line-through;
+}
+
+.section__listItem--hidden {
+  display: none;
 }
 
 .section__button {
@@ -51,4 +68,31 @@
 
 .section__buttonRemove:active {
   background-color: rgb(202, 128, 128);
+}
+
+.section__tasksContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section__tasksButtons {
+  display: flex;
+  gap: 10px;
+  justify-self: end;
+  color: teal;
+  background-color: transparent;
+  border: none;
+  transition: color 1s linear;
+}
+
+.section__tasksButtons:active {
+  color: hsl(180, 48%, 57%);
+  cursor: pointer;
+}
+
+.section__tasksButtons:disabled {
+  color: rgb(174 176 176);
+  cursor: auto;
 }
