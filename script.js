@@ -128,8 +128,8 @@
     }
 
     addNewTask(newTaskContent);
-    document.querySelector(".js-newTask").value = "";
-    document.querySelector(".js-newTask").focus();
+    newTaskInput.value = "";
+    newTaskInput.focus();
   };
 
   const init = () => {

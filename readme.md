@@ -16,8 +16,10 @@ Task List keeps eveything simple and efficient. Start organizing your life today
 2. **CSS:** Styles the appearance of web/app.
 3. **JavaScript:** Adds interactivity and dynamic functionality to web/app.
 
+## Demo:
+
+https://joanna2307.github.io/tasks-list/
+
 ### Contact me:
 
 If you have any questions: [CONTACT ME](mailto:joanna.gorniak.00@gmail.com)
-
-[TASKS LIST](https://joanna2307.github.io/tasks-list/)
